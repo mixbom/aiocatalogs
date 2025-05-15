@@ -43,7 +43,6 @@ export interface StremioMeta {
   name: string;
   type: string;
   poster?: string;
-  background?: string;
   genres?: string[];
   releaseInfo?: string;
 }
