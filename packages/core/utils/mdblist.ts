@@ -323,6 +323,7 @@ export function convertToStremioMeta(items: {
         name: movie.title,
         type: 'movie',
         poster: `https://images.metahub.space/poster/small/${movie.imdb_id}/img`,
+        background: `https://images.metahub.space/background/small/${movie.imdb_id}/img`,
         releaseInfo: movie.release_year ? `${movie.release_year}` : undefined,
       });
     });
@@ -338,6 +339,7 @@ export function convertToStremioMeta(items: {
         name: show.title,
         type: 'series',
         poster: `https://images.metahub.space/poster/small/${show.imdb_id}/img`,
+        background: `https://images.metahub.space/background/small/${show.imdb_id}/img`,
         releaseInfo: show.release_year ? `${show.release_year}--` : undefined,
       });
     });
